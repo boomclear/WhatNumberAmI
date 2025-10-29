@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.env/
+
+# SQLite database files
+*.sqlite3
+db.sqlite3
+
+# Log files
+*.log
+
+# Media and static files (if served dynamically or generated)
+media/
+static_collected/ # Or whatever your collectstatic output directory is
+
+# IDE-specific files (e.g., PyCharm)
+.idea/
+*.iml
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Sensitive information (e.g., local settings)
+local_settings.py # If you use a separate file for local settings and keep sensitive data there
