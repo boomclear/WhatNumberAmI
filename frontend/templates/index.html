@@ -1,5 +1,15 @@
 <html>
   <body>
-    Hello World!
+    <h1>
+      Hello World!      
+    </h1>
+    <form method="post" enctype="multipart/form-data" action={% url 'userUpload' %}>
+      {% csrf_token %}
+      <label>What is the number that you are uploading?</label>
+      <input type="text" id="userAnswer" name="userAnswer"> <br><br>
+      <label>This is where you will have an upload image button</label>
+      <input type="file" id="userUpload" name="userUpload" accept="image/*">
+      <input type="submit" value="Upload">
+    </form>
   </body>
 </html>
