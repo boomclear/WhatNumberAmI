@@ -1,6 +1,6 @@
 from django.db import models
 
-image_storage = "../../DumpFiles"
+image_storage = "WhatNumberAmIUploads/%Y/%m/%d"
 
 
 class UserImage(models.Model):

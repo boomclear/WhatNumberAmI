@@ -1,6 +1,4 @@
 from django.shortcuts import render
-
-# from django.http import HttpRequest
 from .forms import UploadImageForm
 from .models import UserImage
 from django.shortcuts import get_object_or_404, render, redirect
@@ -21,7 +19,8 @@ def userUpload(request):
             userSubmission = userForm.save()
             return redirect("userResultPage", pk=userSubmission.pk)
         else:
-            return render(request, "error.html", {"request": request})
+            print(userForm.errors)
+            return render(request, "error.html", {"request": userForm.errors})
 
 
 def userResultPage(request, pk):
